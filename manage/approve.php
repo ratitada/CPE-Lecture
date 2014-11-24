@@ -232,7 +232,7 @@ function connectDatabase() {
 					$statement->execute();
 					$result = $statement->fetchAll();
 					$databaseHandler = NULL ;*/
-					$result=$user->myManager->fetchLecture();
+					$result=$user->myManager->fetchPendingLecture();
 					$i=1;
 					foreach($result as $r){
 						$row['address']=$r->address;

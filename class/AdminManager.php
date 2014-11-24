@@ -4,7 +4,7 @@ class AdminManager extends SimpleManager {
 	public function __construct() {
 		parent::__construct();
 	}
-	public function fetchLecture() {
+	public function fetchPendingLecture() {
 		$db = DBConnector::connectToDB();
 		$strSQL = "SELECT * FROM lecture WHERE status = 'Pending'";
 		$paramArr = array();

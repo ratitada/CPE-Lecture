@@ -35,7 +35,7 @@ $statement = $databaseHandler->prepare($query);
 $statement->execute();
 $result = $statement->fetchAll();
 $databaseHandler = NULL ;*/
-$result=$user->myManager->fetchLecture();
+$result=$user->myManager->fetchPendingLecture();
 //print_r($result);
 echo "
 	<div class='col-md-6' id='divElement'>
