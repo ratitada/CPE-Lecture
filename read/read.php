@@ -82,17 +82,15 @@ $(".dropdown-menu").on('click', 'li a', function(){
 <!-- end Yo format -->
 
 <!-- ================== start page header <not page title> =============== -->
-<div class="page-header">
   
   <h1>Reading Area <small>
-    <h4></h4>
     </small></h1>
-</div>
-<div id='divElement'>
+    <div class="hr"><hr/></div>
+
 		<p>Here, you can search any lecture you wish.</p>
         <p>Note: Choose an option in each dropdown list to specify your search or omit it if you want to see all.</p>
 		<br>
-	</div>
+	
 <!-- ================== end page header <not page title> ================= --> 
 
 <!-- ==================================== start ALL dropdown of searching option ================================= -->

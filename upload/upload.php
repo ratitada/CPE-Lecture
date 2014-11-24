@@ -20,12 +20,12 @@ $paramArr = array();
 $allTeacher = $db->queryThis($strSQL, $paramArr);
 ?>
 
-<div class="page-header" style="margin-left:50px;">
-  <h1>Upload Area <small>
-  <h4>แบ่งปัน lecture ให้กับเพื่อนของคุณ</h4>
+<div class="page-header" id='divElement'>
+  <h1>Upload Area <small>  
   </small></h1>
   <div class="hr"><hr/></div>
-  <div class="register-content">
+  <p>Share Lecture with your friends!!</p>
+  	<br>
     <form action="write.php" method="post" class="form-horizontal" enctype="multipart/form-data">
       <div class="form-group">
         <label class="col-sm-2 control-label">Subject</label>
@@ -120,8 +120,7 @@ $allTeacher = $db->queryThis($strSQL, $paramArr);
           <input type="submit" value="Submit" class="btn btn-success">
         </div>
       </div>      
-    </form>
-  </div>  
+    </form> 
 </div>
 </body>
 </html>
