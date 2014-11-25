@@ -246,7 +246,7 @@ function connectDatabase() {
 							            <td>
 							                ".$items[sizeof($items)-1];
 							                $items2=explode( '.' , $items[sizeof($items)-1]);
-						if ($items2[1]=='pdf') {
+						/*if ($items2[1]=='pdf') {
 
 											echo "<!--<a href=../".$row['address']." target=\"_BLANK\">-->
 												<button type='button' class='btn btn-xs btn-primary' onclick='javascript:openPDF(\"../".$row['address']."\");'>
@@ -255,13 +255,13 @@ function connectDatabase() {
 								                <!--</a>-->";
 						}
 						else
-						{
+						{*/
 											echo "<!--<a href='javascript:showLectureInModal(".$row['LID'].");'>-->
 								                <button type='button' class='btn btn-xs btn-primary' data-toggle='modal' data-target='#myModal' onclick='javascript:showLectureInModal(".$row['LID'].");'>
 								                	<span class='glyphicon glyphicon-search' aria-hidden='true'></span>
 								                </button>
 							               		<!-- </a>-->";
-						}
+						//}
 						echo "	            </td>
 							            <td>".$row['uploadDate']."</td>
 							            <!--<td>".$row['status']."</td>-->

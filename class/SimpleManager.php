@@ -7,9 +7,9 @@ class SimpleManager {
 	}
 	public function uploadLecture($uppingLect) {
 		$db = DBConnector::connectToDB();
-		$strSQL = "INSERT INTO lecture (nontriUserID, subjectID, teacherID, year, term, numClass, status, address) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+		$strSQL = "INSERT INTO lecture (nontriUserID, subjectID, teacherID, year, term, numClass, status, uploadDate, address) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		$paramArr = array($uppingLect->nontriUserID, $uppingLect->subjectID, $uppingLect->teacherID, $uppingLect->year,
-							$uppingLect->term, $uppingLect->numClass, $uppingLect->status, $uppingLect->address);
+							$uppingLect->term, $uppingLect->numClass, $uppingLect->status, $uppingLect->uploadDate, $uppingLect->address);
 		
 		//$result = $this->db->queryThis($strSQL, $paramArr);
 		$result = $db->queryThis($strSQL, $paramArr);

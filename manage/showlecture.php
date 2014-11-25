@@ -33,12 +33,15 @@ foreach($result as $row){
 	$items=explode ( '/' , $row['address'] );
 	$items2=explode( '.' , $items[sizeof($items)-1]);
 	if ($items2[1]=='pdf') {
-		echo "pdf file";
+		echo "<center>
+		<iframe src='../".$row['address']."' alt=''  width='700' height='450'>
+		</center>
+		";
 	}
 	else
 	{
 		echo "<center>
-			<img src='../lecture/".$items[sizeof($items)-1]."' alt=''  width='700'>
+			<img src='../".$row['address']."' alt=''  width='700'>
 			</center>
 		";
 	}
